@@ -1,0 +1,758 @@
+html {
+    font-size: 625%;
+    /*  这里1rem=100px*/
+}
+
+body {
+    /*background: #ccc;*/
+}
+
+
+/*头部产品图*/
+
+header .showpic {
+    position: relative;
+    height: 3.75rem;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+header .pic-menu {
+    width: 500%;
+    height: 3.75rem;
+    backface-visibility: hidden;
+    display: flex;
+    display: -webkit-flex;
+}
+
+header .pic-menu img {
+    width: 100%;
+    height: 100%;
+}
+
+.pic-menu li {
+    flex: 1;
+    -webkit-flex: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+}
+
+.showBigPic {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .8);
+    z-index: 9;
+}
+
+.showBigPic img {
+    width: 100%;
+}
+
+
+/*  info */
+
+.warrper {
+    margin: 0 0.1rem;
+}
+
+.product-info {
+    padding-top: 0.1rem;
+}
+
+.product-info>h3 {
+    color: #666;
+    font-size: 0.16rem;
+    line-height: 1.4;
+}
+
+.produce-price {
+    padding-top: 0.1rem;
+    font-size: 0.16rem;
+}
+
+.produce-price span {
+    display: inline-block;
+}
+
+.produce-price dl {
+    display: inline-block;
+    margin-right: 0.05rem;
+    font-size: 0;
+}
+
+.produce-price .bigprice {
+    font-size: 0.2rem;
+    color: red;
+}
+
+.produce-price .spot {
+    font-size: 0.1rem;
+    color: red;
+}
+
+.produce-price .smallprice {
+    font-size: 0.1rem;
+    color: red;
+}
+
+.produce-price .discount {
+    padding: 0.02rem;
+    color: red;
+}
+
+.produce-price .discount-border {
+    border: 1px solid red;
+    border-radius: 3px
+}
+
+.produce-price .price:before {
+    content: '￥';
+    display: inline-block;
+    font-size: 0.16rem;
+    color: red;
+}
+
+.produce-price .original-price {
+    padding: 0.02rem;
+    color: #ff9204;
+}
+
+.produce-price .price-border {
+    border: 1px solid #ff9204;
+    border-radius: 3px;
+}
+
+.freigth {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    padding-top: 0.1rem;
+}
+
+.freigth span {
+    color: #999;
+}
+
+.product-info span {
+    font-size: 0.1rem;
+}
+
+.pay {
+    font-size: 0;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+}
+
+.pay dl {
+    display: inline-block;
+    padding-right: 0.15rem;
+}
+
+.pay .icon {
+    display: inline-block;
+    width: 0.12rem;
+    height: 0.12rem;
+    background: url(../img/6.gif) no-repeat;
+    background-size: cover;
+    margin-right: 0.05rem;
+}
+
+.coupan {
+    padding: 0.1rem 0;
+    font-size: 0;
+    border-top: 1px solid #ccc;
+}
+
+.coupan .coupan-pic {
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.12rem;
+    background: url(../img/7.gif) no-repeat;
+    background-size: cover;
+    margin-right: 0.1rem;
+}
+
+.coupan dl {
+    width: 93%;
+    display: inline-block;
+}
+
+.more {
+    padding-left: 0.1rem;
+    display: inline-block;
+}
+
+.more .sanj {
+    display: inline-block;
+    text-align: right;
+    width: 0.13rem;
+    height: 0.17rem;
+    background: url(../img/8.gif) no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+
+
+/*     payinfo   */
+
+.payinfo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+/*  通用动画和属性   */
+
+.visiblity {
+    visibility: hidden;
+}
+
+.show {
+    background: rgba(0, 0, 0, .6);
+}
+
+.show .payinfo-bottom,
+.hide .payinfo-bottom,
+.show .info-content,
+.hide .info-content {
+    -webkit-transition: -webkit-transform .5s ease-out;
+    transition: transform .5s ease-out
+}
+
+.show .payinfo-bottom,
+.show .info-content {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hide .payinfo-bottom,
+.hide .info-content {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+
+/*   end   */
+
+.payinfo-warrper {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+}
+
+.payinfo .payinfo-top {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 2;
+    width: 100%;
+    cursor: pointer;
+}
+
+.payinfo .payinfo-bottom {
+    padding-top: 0.2rem;
+    font-size: 0;
+    background: #fff;
+    flex: 7;
+}
+
+.payinfo-bottom h2 {
+    font-size: 0.2rem;
+    color: #666;
+    text-align: center;
+    padding-bottom: 0.2rem;
+}
+
+.payinfo-bottom h3 {
+    font-size: 0.16rem;
+    color: #666;
+    text-align: left;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    flex: 1;
+}
+
+.payinfo-bottom ul li {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    padding: 0.1rem 0 0.2rem 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.payinfo-bottom .bigicon {
+    display: flex;
+    width: 0.24rem;
+    height: 0.34rem;
+    background: url(../img/6.gif) no-repeat center center;
+    margin: 0 0.15rem;
+}
+
+.payinfo .payinfo-footer {
+    background: #ff5000;
+    color: #fff;
+    display: flex;
+    flex: 1;
+    font-size: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.payinfo-footer .surebtn {
+    font-size: 0.16rem;
+    padding: 0.1rem 0;
+}
+
+.zw {
+    flex: 2;
+    height: 0.6rem;
+}
+
+
+/*.info-content{
+	overflow-y:auto; 
+}*/
+
+
+/*    choice */
+
+.choice-warrper {
+    border-top: 0.2rem solid #eee;
+    border-bottom: 0.2rem solid #eee;
+}
+
+.choice {
+    padding: 0.2rem 0;
+    font-size: 0;
+}
+
+.choice h3 {
+    display: inline-block;
+    font-size: 0.16rem;
+    width: 93%;
+    color: #333;
+   font-weight: 200;
+    letter-spacing: 1px;
+}
+
+
+/*     choice列表   */
+
+.choiceinfo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    z-index: 10;
+}
+
+.choiceinfo .warrper {
+    margin: 0;
+    font-size: 0;
+}
+
+.info-content {
+    background: #fff;
+}
+
+.info-content-warrper {
+    margin: 0 0.1rem;
+}
+
+.choice-content {
+    overflow-y: auto;
+    height: 4.15rem;
+}
+
+.info-pic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.info-pic .top {
+    margin-top: -0.1rem;
+}
+
+.info-pic img {
+    border-radius: 0.05rem;
+}
+
+.info-pic .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.info-pic .close .close-icon {
+    display: inline-block;
+    background: url(../img/9.gif) no-repeat center;
+    width: 0.26rem;
+    height: 0.26rem;
+    background-size: 50%;
+}
+
+.info-pic span {
+    font-size: 0.14rem;
+    margin-right: 0.05rem;
+
+}
+
+.info-pic .info-datils {
+    margin-left: 0.15rem;
+}
+
+.info-datils .colorred {
+    color: red;
+}
+.info-datils dt{
+	margin-bottom: 0.05rem;
+}
+.choice-menu,
+.choice-flowerport,
+.choice-num {
+    padding: 0.1rem 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.choice-menu h2,
+.choice-flowerport h2,
+.choice-num h2 {
+    font-size: 0.16rem;
+    text-align: left;
+}
+
+.choice-menu .items,
+.choice-flowerport .flowerport {
+    display: inline-block;
+    height: 0.33rem;
+    line-height: 0.33rem;
+    background: #f9f9f9;
+    border-radius: 0.05rem;
+    padding: 0.05rem;
+    margin: 0.1rem 0.2rem 0 0;
+    font-size: 0.14rem;
+    box-shadow: border-box;
+}
+
+.choice-num {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.choice-num h2 {
+    flex: 1;
+}
+
+.choice-num span {
+    display: inline-block;
+    width: 0.3rem;
+    font-size: 0.14rem;
+    margin-right: 0.05rem;
+    text-align: center;
+    background: #e7e7e7;
+    padding: 0.05rem;
+}
+
+.choice-num span input {
+    width: 0.3rem;
+    outline: none;
+    border: none;
+    background: #e7e7e7;
+}
+
+.bottom-btn {
+    /*position: fixed;
+    bottom: 0;*/
+    display: flex;
+    display: -webkit-flex;
+}
+
+.bottom-btn .btn {
+    flex: 1;
+    -webkit-flex: 1;
+    height: 0.6rem;
+    line-height: 0.6rem;
+}
+
+.bottom-btn .addshopping {
+    background: #f60;
+}
+
+.bottom-btn .shopping {
+    background: #f90;
+}
+
+.bottom-btn span {
+    font-size: 0.16rem;
+    color: #fff;
+    padding: 0.1rem 0.4rem;
+}
+
+
+/*  产品介绍  */
+
+.product-ul {
+    position: relative;
+    display: flex;
+    font-size: 0;
+    justify-content: space-around;
+	width: 100%;
+	background: #fff;
+}
+.fixed{
+	position: fixed;
+	 top: 0;
+	left: 0;
+	z-index: 8;
+	width: 100%;
+
+}
+/*.fixedtop{
+	position: fixed;
+	 top: 1rem;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+}
+*/.relative{
+	position: relative;
+	width: 1.2rem;
+	height: 0.02rem;
+}
+.product-ul span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1.2rem;
+    height: 0.02rem;
+    background: red;
+}
+
+.product-ul .click{
+    font-size: 0.18rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding: 0.05rem 0;
+}
+
+.product-ul .select {
+    color: red;
+}
+
+.pic-and-text {
+    border-top: 0.15rem solid #eee;
+}
+
+.pic-and-text h3 {
+    font-size: 0.12rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.pic-and-text>li {
+    width: 100%;
+}
+
+.pic-and-text li img {
+    width: 100%;
+}
+
+
+/*  产品参数  */
+
+.produce {
+	display: none;
+    font-size: 0;
+    border-top: 0.15rem solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.produce dl {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 0.1rem 0;
+}
+
+.produce dt {
+    width: 40%;
+    font-size: 0.12rem;
+    color: #999;
+    text-align: left;
+    margin-left: 0.1rem;
+}
+
+.produce dd {
+    width: 55%;
+    font-size: 0.12rem;
+    color: #999;
+    text-align: left;
+}
+/*    店铺信息  */
+.shop-info-pic{
+	display: flex;
+	display: -webkit-flex;
+	margin-top: 0.1rem;
+	font-size: 0;
+	border-top: 0.2rem solid #e7e7e7;
+	padding: 0.1rem;
+}
+.shop-info-pic .pic-img,.shop-info-pic .pic-right{
+	width: 0.45rem;
+	height: 0.45rem;
+
+}
+
+.shop-info-pic .pic-rating{
+	flex: 1;
+	-webkit-flex:1;
+	width: 100%;
+	font-size: 0;
+	margin-left: 0.1rem;
+}
+.shop-info-pic .pic-rating h3{
+	font-size: 0.16rem;
+}
+.shop-info-pic .rating{
+display: block;
+width: 0.64rem;
+height: 0.16rem;
+	background: url(../img/28.jpg) repeat-x;
+	background-size: contain;
+}
+
+.shop-info-pic img{
+	width: 0.45rem;
+	height: 0.45rem;
+}
+/*  关注  */
+.shop-focus{
+	display: flex;
+	display: -webkit-flex;
+	font-size: 0;
+
+}
+.shop-focus .focus-left{
+	flex: 1;
+	text-align: center;
+	border-right: 1px solid #e7e7e7
+}
+.shop-focus .focus-right{
+	flex: 1;
+	text-align: center;
+}
+.shop-focus span{
+	display: block;
+	font-size: 0.16rem;
+	margin-top: 0.1rem;
+}
+/*  购物按钮 */
+.shop-info{
+	display: none;
+}
+.shop-btn{
+	display: flex;
+	display: -webkit-flex;
+	font-size: 0;
+	padding-top: 0.2rem;
+}
+.shop-btn dl{
+	flex: 1;
+	text-align: center;
+}
+.shop-btn dl a{
+	display: inline-block;
+	font-size: 0.12rem;
+	color: #ff5000;
+	border: 1px solid #ff5000;
+	padding: 0.1rem;
+	border-radius: 0.05rem;
+}
+/*   底部 */
+.footer{
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 8;
+	font-size: 0;
+	    width: 100%;
+    height: 0.5rem;
+    background: #fff;
+}
+
+.footer .server-icon,.footer .shop-icon,.footer .collecting-icon{
+	width: 0.16rem;
+	height: 0.16rem;
+	margin: 0.05rem;
+
+}
+.footer .server-icon{
+		background:url(../img/11.jpg) no-repeat;
+	background-size: contain;
+}
+.footer .shop-icon{
+	background:url(../img/12.jpg) no-repeat;
+	background-size: contain;
+
+
+}
+.footer .collecting-icon{
+	background:url(../img/13.jpg) no-repeat;
+	background-size: contain;
+
+
+}
+.footer p{
+	font-size: 0.12rem;
+}
+.footer a{
+	font-size: 0.15rem;
+	color: #fff;
+}
+.footer-commen{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	align-content: center;
+	width: 12%;
+	border-right: 1px solid #e7e7e7;
+}
+.footer .addshop-bg,.footer .shop-bg{
+	width: 32%;
+	line-height: 0.5rem;
+	text-align: center;
+	
+}
+.footer .addshop-bg{
+	background: #ff9402;
+}
+.footer .shop-bg{
+	background: #ff5000;
+}

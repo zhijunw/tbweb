@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="手机淘宝">
+    <meta name="descrition" content="购物就上淘宝">
+    <!-- 容许全屏模式浏览 -->
+    <meta content="yes" name="app-mobile-web-app-capable">
+    <!-- 忽略将页面中的数字识别为电话号码 -->
+    <meta content="telephone=no" name="formt-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <!--    <script>!function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);  flex(100, 1);</script> -->
+    <link rel="stylesheet" type="text/css" href="css/rest.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <title>手机淘宝</title>
+</head>
+
+<body>
+    <header>
+        <!-- 图片展示区 -->
+        <section class="showpic">
+            <ul class="pic-menu" id="pic-menu">
+                <li class="list-menu">
+                    <img src="img/1.jpg">
+                </li>
+                <li class="list-menu">
+                    <img src="img/2.jpg">
+                </li>
+                <li class="list-menu">
+                    <img src="img/3.jpg">
+                </li>
+                <li class="list-menu">
+                    <img src="img/4.jpg">
+                </li>
+                <li class="list-menu">
+                    <img src="img/5.jpg">
+                </li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <section>
+            <section class="product-info warrper">
+                <h3>栀子花发财树盆栽绿萝水培植物万年青绿值驱蚊草办公室盆栽富贵竹</h3>
+                <div class="produce-price">
+                    <dl class="price">
+                        <span class="bigprice">9</span>
+                        <span class="spot">.</span>
+                        <span class="smallprice">9</span>
+                    </dl>
+                    <dl class="discount-border">
+                        <span class="discount">超值优惠</span>
+                    </dl>
+                    <dl class="price-border">
+                        <span class="original-price">淘金币抵2%</span>
+                    </dl>
+                </div>
+                <div class="freigth">
+                    <span>快递：免运费</span>
+                    <span>月销12345笔</span>
+                    <span>广东广州</span>
+                </div>
+                <div class="pay">
+                    <dl>
+                        <i class="icon"></i>
+                        <span>不支持7天无理由与退款</span>
+                    </dl>
+                    <dl>
+                        <i class="icon"></i>
+                        <span>蚂蚁花呗</span>
+                    </dl>
+                    <dl>
+                        <i class="icon"></i>
+                        <span>信用卡支付</span>
+                    </dl>
+                    <div class="more" id="more">
+                        <span class="sanj"></span>
+                    </div>
+                </div>
+                <div class="payinfo visiblity" id="payinfo">
+                    <div class="payinfo-warrper">
+                        <div class="payinfo-top"></div>
+                        <div class="payinfo-bottom">
+                            <h2>服务说明</h2>
+                            <ul>
+                                <li>
+                                    <i class="bigicon"></i>
+                                    <h3>不支持7天无理由</h3>
+                                </li>
+                                <li>
+                                    <i class="bigicon"></i>
+                                    <h3>蚂蚁花呗</h3>
+                                </li>
+                                <li>
+                                    <i class="bigicon"></i>
+                                    <h3>信用卡支付</h3>
+                                </li>
+                                <li>
+                                    <i class="bigicon"></i>
+                                    <h3>集分宝</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="payinfo-footer" id="surebtn">
+                            <span class="surebtn">确认</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="coupan">
+                    <dl>
+                        <i class="coupan-pic"></i>
+                        <span>20元店铺优惠券</span>
+                    </dl>
+                    <dl>
+                        <i class="coupan-pic"></i>
+                        <span>10元店铺卷</span>
+                    </dl>
+                    <div class="more">
+                        <span class="sanj"></span>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- 选择 -->
+        <section class="choice-warrper">
+            <section class="choice warrper" id="moreflower">
+                <h3 id="refreshText">请选择颜色分类是否含花盆</h3>
+                <div class="more">
+                    <span class="sanj"></span>
+                </div>
+            </section>
+        </section>
+        <!-- 选择信息 -->
+        <div class="choiceinfo hide visiblity" id="choiceinfo">
+            <div class="warrper">
+                <!-- 内容 -->
+                <div class="zw"></div>
+                <div class="info-content" id="info-content">
+                    <div class="info-content-warrper">
+                        <section class="info-pic">
+                            <dl class="top">
+                                <img src="img/20.jpg" id="img">
+                            </dl>
+                            <dl class="info-datils">
+                                <dt>
+                                    <span class="colorred">￥9.9</span>
+                                </dt>
+                                <dt>
+                                    <span>库存:12345</span>
+                                </dt>
+                                <dt>
+                                    <span id="choiceColor">请选择:颜色分类 </span>
+                                    <span id="choiceFlowerport">请选择:是否含有花盆</span>
+                                </dt>
+                            </dl>
+                            <div class="close" id="close">
+                                <i class="close-icon"></i>
+                            </div>
+                        </section>
+                        <!-- choice menu -->
+                        <div class="choice-content">
+                            <section class="choice-menu">
+                                <h2>颜色分类</h2>
+                                <ul class="items-menu" id="item-menu">
+                                    <li class="items" data-img="img/21.jpg">小竖白盆绿萝</li>
+                                    <li class="items" data-img="img/22.jpg">小竖白盆发财树</li>
+                                    <li class="items" data-img="img/23.jpg">小竖白盆富贵竹</li>
+                                    <li class="items" data-img="img/24.jpg">小竖白盆栀子花</li>
+                                    <li class="items" data-img="img/25.jpg">小竖白盆美国万年青</li>
+                                    <li class="items" data-img="img/26.jpg">小竖白盆文竹</li>
+                                    <li class="items" data-img="img/27.jpg">小竖白盆碧玉</li>
+                                    <li class="items" data-img="img/28.jpg">小竖白盆幸福树</li>
+                                    <li class="items" data-img="img/29.jpg">小竖白盆九里香</li>
+                                    <li class="items" data-img="img/30.jpg">小竖白盆袖珍椰子</li>
+                                    <li class="items" data-img="img/31.jpg">小竖白盆花叶常春藤</li>
+                                    <li class="items" data-img="img/32.jpg">小竖白盆红粉佳人</li>
+                                    <li class="items" data-img="img/33.jpg">小竖白盆罗汉松</li>
+                                </ul>
+                            </section>
+                            <section class="choice-flowerport">
+                                <h2>是否含花盆</h2>
+                                <span class="flowerport" id="flowerport">带盆栽好</span>
+                            </section>
+                            <section class="choice-num">
+                                <h2>购买数量</h2>
+                                <span id="minus">-</span>
+                                <span><input type="tel" value="1" id="tel"></input></span>
+                                <span id="add">+</span>
+                            </section>
+                        </div>
+                        <sectin class="bottom-btn">
+                            <dl class="addshopping btn">
+                                <span>加入购物车</span>
+                            </dl>
+                            <dl class="shopping btn">
+                                <span>立即购买</span>
+                            </dl>
+                        </sectin>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-datils" id="show">
+            <div class="product-info-warrper">
+                <div class="ul-warrper" id="ul-warrper">
+                    <ul class="product-ul" id="productUl">
+                        <li class="select click" data-id="datils">
+                            图文详情
+                        </li>
+                        <li data-id="produce" class="click">产品参数</li>
+                        <li data-id="info" class="click">店铺推荐</li>
+                        <span></span>
+                    </ul>
+                </div>
+                <section id="contentALL">
+                    <section class="pic-and-text" id="datils">
+                        <h3>小竖白盆系列上新9.9元买任意2盆减3元4盆减10元，一个ID限购20盆，活动数量有限随时涨价!</h3>
+                        <ul>
+                            <li>
+                                <img src="img/35.jpg">
+                            </li>
+                            <li>
+                                <img src="img/36.jpg">
+                            </li>
+                            <li>
+                                <img src="img/37.jpg">
+                            </li>
+                            <li>
+                                <img src="img/38.jpg">
+                            </li>
+                            <li>
+                                <img src="img/39.jpg">
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="produce" id="produce">
+                        <div class="prodece-warrper">
+                            <dl>
+                                <dt>品牌</dt>
+                                <dd>子乐湾</dd>
+                            </dl>
+                            <dl>
+                                <dt>颜色分类</dt>
+                                <dd>小竖白盆绿萝,小竖白盆发财树,小竖白盆富贵竹,小竖白盆栀子花,小竖白盆美国万年青,小竖白盆文竹,小竖白盆碧玉,小竖白盆幸福树,小竖白盆九里香,小竖白盆袖珍椰子,小竖白盆花叶常春藤,小竖白盆红粉佳人,小竖白盆罗汉松</dd>
+                            </dl>
+                            <dl>
+                                <dt>植物</dt>
+                                <dd>绿萝</dd>
+                            </dl>
+                            <dl>
+                                <dt>适用空间</dt>
+                                <dd>办公室,床台，客厅</dd>
+                            </dl>
+                            <dl>
+                                <dt>功能</dt>
+                                <dd>防辐射，净化空气，美观</dd>
+                            </dl>
+                            <dl>
+                                <dt>开花季节</dt>
+                                <dd>无</dd>
+                            </dl>
+                            <dl>
+                                <dt>植物类型</dt>
+                                <dd>水培植物</dd>
+                            </dl>
+                        </div>
+                    </section>
+                    <section class="shop-info" id="tj">
+                        <div class="shop-info-warrper">
+                            <!-- 图片 -->
+                            <div class="shop-info-pic">
+                                <div class="pic-img">
+                                    <a href="">
+                                        <img src="img/27.jpg">
+                                    </a>
+                                </div>
+                                <div class="pic-rating">
+                                    <h3>子乐湾绿植店</h3>
+                                    <i class="rating"></i>
+                                </div>
+                                <div class="pic-right">
+                                    <a href="">
+                                        <img src="img/29.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 关注 -->
+                            <div class="shop-focus">
+                                <div class="focus-left">
+                                    <span>78</span>
+                                    <span>全部宝贝</span>
+                                </div>
+                                <div class="focus-right">
+                                    <span>6.1万</span>
+                                    <span>关注人数</span>
+                                </div>
+                            </div>
+                            <!--  购物按钮 -->
+                            <div class="shop-btn">
+                                <dl>
+                                    <a href="">查看分类</a>
+                                </dl>
+                                <dl>
+                                    <a href="">进店看看</a>
+                                </dl>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="custome-server footer-commen">
+            <div>
+                <p class="server-icon"></p>
+                <p class="server-text">客服</p>
+            </div>
+        </div>
+        <div class="shop footer-commen">
+            <div>
+                <p class="shop-icon"></p>
+                <p class="server-text">店铺</p>
+            </div>
+        </div>
+        <div class="collecting-shop footer-commen">
+            <div>
+                <p class="collecting-icon"></p>
+                <p class="server-text">收藏</p>
+            </div>
+        </div>
+        <div class="addshop-bg">
+            <a href="">加入购物车</a>
+        </div>
+        <div class="shop-bg">
+            <a href="">立即购买</a>
+        </div>
+    </footer>
+    <!-- 浮层 -->
+    <section id="showBigPic">
+        <img src="" alt="" />
+    </section>
+   <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
