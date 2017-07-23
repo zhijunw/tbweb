@@ -12,14 +12,12 @@ body {
 
 header .showpic {
     position: relative;
-    height: 3.75rem;
     overflow: hidden;
     overflow-x: auto;
 }
 
 header .pic-menu {
     width: 500%;
-    height: 3.75rem;
     backface-visibility: hidden;
     display: flex;
     display: -webkit-flex;
@@ -34,7 +32,6 @@ header .pic-menu img {
     flex: 1;
     -webkit-flex: 1;
     width: 100%;
-    height: 100%;
     text-align: center;
     background: #fff;
     overflow: hidden;
@@ -156,7 +153,9 @@ header .pic-menu img {
     display: -webkit-flex;
     justify-content: space-around;
 }
-
+.pay .pay-more{
+    flex:1;
+}
 .pay dl {
     display: inline-block;
     padding-right: 0.15rem;
@@ -172,6 +171,7 @@ header .pic-menu img {
 }
 
 .coupan {
+    display: flex;
     padding: 0.1rem 0;
     font-size: 0;
     border-top: 1px solid #ccc;
@@ -186,14 +186,12 @@ header .pic-menu img {
     margin-right: 0.1rem;
 }
 
-.coupan dl {
-    width: 93%;
-    display: inline-block;
+.coupan .acount {
+    flex:1;
 }
 
 .more {
     padding-left: 0.1rem;
-    display: inline-block;
 }
 
 .more .sanj {
@@ -344,14 +342,15 @@ header .pic-menu img {
 }
 
 .choice {
+    display: flex;
     padding: 0.2rem 0;
     font-size: 0;
 }
 
 .choice h3 {
     display: inline-block;
+    flex:1;
     font-size: 0.16rem;
-    width: 93%;
     color: #333;
    font-weight: 200;
     letter-spacing: 1px;
